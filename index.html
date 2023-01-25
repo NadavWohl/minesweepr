@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="onInit()"> 
+    <h1>Mine Sweeper</h1>
+    <div class="game-btn-level">
+        <button onclick="setLevel(this)">You New It</button>
+        <button onclick="setLevel(this)">You Know It</button>
+        <button onclick="setLevel(this)">You Own It</button>
+    </div>
+    
+    <div class="game-data">
+        <h2> <span class="lives"></span> lives ❤️</h2>
+        <button onclick="onInit()" class="smilyhappy-btn"></button>
+        <button class="img/flag.png"> flag</button>
+        <h2 class="scoure-count">Scoure Counter: <span>0</span></h2>
+    </div>   
+
+    <div class="game-board">
+        <table>
+            <tbody class="game-table"></tbody>
+        </table>    
+    </div>
+
+    <footer>Nadav Wohl</footer>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
